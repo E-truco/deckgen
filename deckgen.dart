@@ -20,7 +20,7 @@ class Card{
 //
 // suits = array with the suits of the cards as string. example: ["Clubs", "Diamonds", "Spades", "Hearts"];
 // SUITS SHOULD BE IN ORDER OF SUIT VALUE! in the example above, "Clubs" has a true value of 1 and "Hearts" has a true value of 4.
-List<Card> createDeck(List<String> values, List<String> suits){
+List<Card> deckgen(List<String> values, List<String> suits){
   
   List<Card> deck = [];
 
@@ -40,7 +40,7 @@ List<Card> createDeck(List<String> values, List<String> suits){
 
 void main(){
 
-  var deck = createDeck(["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"], ["Clubs", "Diamonds", "Spades", "Hearts"]);
+  var deck = deckgen(["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"], ["Clubs", "Diamonds", "Spades", "Hearts"]);
 
   deck.forEach(print);
 }
