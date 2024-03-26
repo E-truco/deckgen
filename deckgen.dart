@@ -24,14 +24,25 @@ List<Card> createDeck(List<String> values, List<String> suits){
   
   List<Card> deck = [];
 
+
+  for(var i = 0; i < values.length; i++){
+
+    for(var y = 0; y < suits.length; y++){
+
+      Card current = new Card(values[i], suits[y], i+1, y+1);
+      deck.add(current);
+    }
+  }
+
   return deck;
 }
 
 
 void main(){
-  Card card = new Card('10', 'Spades', 10, 3);
 
-  print(card);
+  var deck = createDeck(["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"], ["Clubs", "Diamonds", "Spades", "Hearts"]);
+
+  deck.forEach(print);
 }
 
 
