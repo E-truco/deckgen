@@ -11,7 +11,7 @@ class Card{
   Card(this.value, this.suit, this.trueValue, this.suitValue);
 
   @override
-  String toString() => "[($trueValue) $value of ($suitValue)$suit]";
+  String toString() => "[($trueValue)($suitValue) | $value of $suit]";
 }
 
 
