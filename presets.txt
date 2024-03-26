@@ -1,9 +1,0 @@
-i'll format this later -codykoinabox
-
-
-French Suited Playing Cards:
-Faces: ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
-Suits: ["Clubs", "Diamonds", "Spades", "Hearts"]
-
-
-Spanish Suited Playing Cards:
