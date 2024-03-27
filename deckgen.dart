@@ -34,7 +34,7 @@ void main() {
   String filePath = 'presets/spanish.txt';
   File file = File(filePath);
 
-  //
+  //just searching for the string
 
   file.readAsString().then((String typedeck) {
     print('Conteúdo do arquivo:');
