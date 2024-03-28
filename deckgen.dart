@@ -31,21 +31,24 @@ List<Card> deckgen(List<String> values, List<String> suits) {
 }
 
 void main() {
-  String filePath = 'presets/spanish.txt';
-  File file = File(filePath);
+  // I abandoned my idea, and only brought the list
+  //we just had the change of ["Clubs", "Diamonds", "Spades", "Hearts"] and I already brought a list of strings for that
+  List<String> cardValues = [
+    "4",
+    "5",
+    "6",
+    "7",
+    "10",
+    "11",
+    "12",
+    "1",
+    "2",
+    "3"
+  ];
 
-  //just searching for the string
+  List<String> cardSuits = ["Moles", "Espadas", "Copas", "Paus"];
 
-  file.readAsString().then((String typedeck) {
-    print('Conteúdo do arquivo:');
-    print(typedeck);
-  }).catchError((e) {
-    print('Erro ao ler o arquivo: $e');
-  });
-
-  var deck = deckgen(
-      ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"],
-      ["Clubs", "Diamonds", "Spades", "Hearts"]);
+  var deck = deckgen(cardValues, cardSuits);
 
   deck.forEach(print);
 }
