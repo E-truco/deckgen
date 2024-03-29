@@ -1,4 +1,3 @@
-import 'dart:io';
 
 class Card {
   late String value;
@@ -31,17 +30,6 @@ List<Card> deckgen(List<String> values, List<String> suits) {
 }
 
 void main() {
-  String filePath = 'presets/spanish.txt';
-  File file = File(filePath);
-
-  //just searching for the string
-
-  file.readAsString().then((String typedeck) {
-    print('Conteúdo do arquivo:');
-    print(typedeck);
-  }).catchError((e) {
-    print('Erro ao ler o arquivo: $e');
-  });
 
   var deck = deckgen(
       ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"],
